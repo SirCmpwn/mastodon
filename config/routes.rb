@@ -52,6 +52,7 @@ Rails.application.routes.draw do
     resource :profile, only: [:show, :update]
     resource :preferences, only: [:show, :update]
     resource :import, only: [:show, :create]
+    resource :transfer, only: [:show, :create]
 
     resource :export, only: [:show] do
       collection do

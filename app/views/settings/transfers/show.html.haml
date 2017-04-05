@@ -1,0 +1,14 @@
+- content_for :page_title do
+  = t('settings.transfer')
+
+%p.hint= t('transfer.preface')
+
+= form_tag settings_transfer_path, class: 'simple_form edit_account' do
+  = field_set_tag nil, :class => 'fields-group' do
+    .input.string.field_with_hint{:class => @error ? 'field_with_errors' : nil}
+      =text_field_tag :new_account, '', placeholder: t('transfer.new_account'), value: @new_account
+      - if @error
+        %span.error= @error
+      - else
+        %span.hint= t('transfer.hint')
+  %button.btn{:type => "submit", :name => "transfer"} Transfer account

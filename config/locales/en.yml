@@ -93,6 +93,12 @@ en:
       blocking: Blocking list
       following: Following list
     upload: Upload
+  transfer:
+    preface: You you flag your account as moved to a different Mastodon instance here. Your data must be imported separately.
+    hint: The full @username@instance of the new account
+    new_account: New account
+    success: Your account is being transferred. The new account will receive a notification shortly.
+    not_blank: Cannot be blank
   landing_strip_html: <strong>%{name}</strong> is a user on <strong>%{domain}</strong>. You can follow them or interact with them if you have an account anywhere in the fediverse. If you don't, you can <a href="%{sign_up_path}">sign up here</a>.
   notification_mailer:
     digest:
@@ -132,7 +138,8 @@ en:
     back: Back to Mastodon
     edit_profile: Edit profile
     export: Data export
-    import: Import
+    import: Data import
+    transfer: Transfer account
     preferences: Preferences
     settings: Settings
     two_factor_auth: Two-factor Authentication

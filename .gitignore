@@ -28,3 +28,4 @@ neo4j/
 
 # Ignore Capistrano customizations
 config/deploy/*
+vendor/bundle
